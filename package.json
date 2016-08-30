@@ -1,0 +1,34 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "an example express project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo nope!",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artvandelay982/example.git"
+  },
+  "keywords": [
+    "example",
+    "express",
+    "server",
+    "project",
+    "node",
+    "nodejs"
+  ],
+  "author": "Dylan Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artvandelay982/example/issues"
+  },
+  "homepage": "https://github.com/artvandelay982/example#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "hiredis": "^0.5.0",
+    "mongodb": "^2.2.9",
+    "redis": "^2.6.2"
+  }
+}
