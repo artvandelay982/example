@@ -7,7 +7,7 @@ An example express server
 
 GET / => Prints config.msg.hi
 
-GET /mongo => Lists mongodb collections in mongodb collection from config.db
+GET /mongo => Lists collections in mongodb database from config.db
 
 GET /redis => Lists keys on redis server from config.cache
 
