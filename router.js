@@ -1,10 +1,18 @@
+let bodyParser = require('body-parser');
+
 let router = module.exports = (server) => new Promise ( (resolve, reject) => {
+  bootstrap(server);
   routes(server);
   server.app.listen(server.config.port, (err) => {
     if (err) return reject(err);
     return resolve(server.config.msg.up);
   });
 });
+
+function bootstrap (server) {
+  server.app.use(bodyParser.urlencoded({ extended: true }));
+  server.app.use(bodyParser.json());
+}
 
 function routes (server) {
   let app = server.app;

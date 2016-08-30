@@ -1,6 +1,5 @@
 // server package deps
 let express = require('express');
-let bodyParser = require('body-parser');
 
 // local deps
 let config = require('./config');
