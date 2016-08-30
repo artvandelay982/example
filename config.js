@@ -6,6 +6,7 @@ let config = module.exports = {
 
 config.msg = {
   up: 'Express Server listening on port ' + config.port,
+  hi: 'Hello Express Server!',
   err: {
     start: 'Error starting server: '
   }
